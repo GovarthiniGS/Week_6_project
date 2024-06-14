@@ -24,6 +24,38 @@ Checking for null values : df.isnull().sum()
 Handling missing values : df= fill na ()
 Checking for duplicates: df.duplicated()
 String formatting: df.rename()
+# performance Metrica
+# Performing Chi-Squared Tests for comparing Completion rate
+p-value = 0.00
+H0 is not equal to H1
+Rejecting the null hypothesis
+
+# Performing Chi-Squared Tests for comparing error rate
+p-value = 0.00
+H0 is not equal to H1
+Rejecting the null hypothesis
+
+# Completion rate with a Cost-Effectiveness threshold
+Control Completion Rate: 65.59%
+Test Completion Rate: 68.75%
+Completion Rate Difference: 3.16%
+                              threshold = 0.05(5%)
+The increase in completion rate (3.16%) does not meet the 5% threshold.
+                             # Define hypotheses
+                  # H0: The increase in completion rate is less than 5%
+                  # H1: The increase in completion rate is at least 5%
+                                          Z-statistic: -4.91
+                                                           P-value: 0.99
+Fail to reject the null hypothesis: The increase in completion rate does not meet the 5% threshold.
+
+# Additional Hypothesis testing
+Tested whether the average age of clients engaging with the new process is the same as those engaging with the old process
+              T-statistic: -19.12
+               P-value: 0.00
+
+   # H0: The average age of clients in the Test group is not significantly different from the average of clients in the control group
+   # H1: The average age of clients in the Test group is significantly different from the average of clients in the control group
+Reject the null hypothesis: The average age of clients in the Test group is significantly different from the average age of clients in the Control group.
 # Challenges
 Data Quality and Cleaning
 Data Integration
